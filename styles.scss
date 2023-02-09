@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+//Menu
+.navbar{
+
+    .nav-link{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+    .nav-link:hover{
+        color: rgb(240, 59, 240);
+    }
+
+}
+
+//Inico
+
+.inicio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+
+        h1{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 50px;  
+          text-decoration: 3px underline black;
+        }
+
+        h3{
+            margin: 25px;
+        }
+
+        a{
+            color: rgb(254, 252, 252);
+            font-size: 25px;
+            margin: auto;
+            padding: 13px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: #00bb2d;            text-decoration: none;
+        }
+
+        i{
+            margin-left: 5px;
+        }
+    
+    
+    }
+    .carousel{
+        width: 80%;
+    }
+}
+
+
+//Galeria
+
+.galeria{
+    display: grid;
+    text-align: center;
+
+    h1{
+        margin: 50px;
+        font-size: 45px;
+        text-decoration: underline black;
+    }
+
+    .grid{
+        margin: auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+
+       img{
+        width: 100%;
+        filter:  brightness(0.5);
+       }
+
+       img:hover{
+        filter:  brightness(1);
+        transform: scale(1.1);
+        transition: .5s;
+       }
+
+    
+       
+
+       
+    }
+
+    @media (max-width:768px){
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+
+    iframe{
+        width: 72%;
+    }
+
+
+ .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    .informacion{
+        text-align: center;
+        margin: 30px 50px;
+        ul{
+            list-style: none;
+        }
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        .btn-info{
+            color: white;
+            background: black;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        p{
+            margin-top: 15px;
+        }
+    }
+
+
+
+ }
+
+
+}
+
+

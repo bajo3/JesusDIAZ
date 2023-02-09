@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.navbar .nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+.navbar .nav-link:hover {
+  color: rgb(240, 59, 240);
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inicio .main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+.inicio .main h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  text-decoration: 3px underline black;
+}
+.inicio .main h3 {
+  margin: 25px;
+}
+.inicio .main a {
+  color: rgb(254, 252, 252);
+  font-size: 25px;
+  margin: auto;
+  padding: 13px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #00bb2d;
+  text-decoration: none;
+}
+.inicio .main i {
+  margin-left: 5px;
+}
+.inicio .carousel {
+  width: 80%;
+}
+
+.galeria {
+  display: grid;
+  text-align: center;
+}
+.galeria h1 {
+  margin: 50px;
+  font-size: 45px;
+  text-decoration: underline black;
+}
+.galeria .grid {
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+.galeria .grid img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+.galeria .grid img:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .galeria .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+}
+.contacto iframe {
+  width: 72%;
+}
+.contacto .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacto .flex .informacion {
+  text-align: center;
+  margin: 30px 50px;
+}
+.contacto .flex .informacion ul {
+  list-style: none;
+}
+.contacto .flex .informacion h1 {
+  margin-bottom: 15px;
+}
+.contacto .flex .informacion .btn-info {
+  color: white;
+  background: black;
+  padding: 15px;
+  text-decoration: none;
+}
+.contacto .flex .informacion p {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
